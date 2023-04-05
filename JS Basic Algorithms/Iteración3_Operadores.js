@@ -12,3 +12,11 @@ teniendo dos variables p = 10 y j = 5. */
 let p = 10;
 let j = 5;
 let o = p + j;
+console.log (o);
+
+/* 1.5 Usa el correcto operador de asignación que resultará en i = 50,
+teniendo dos variables c = 10 y m = 5. */
+let c = 10;
+let m = 5;
+let i = 10 * 5;
+console.log(i);
