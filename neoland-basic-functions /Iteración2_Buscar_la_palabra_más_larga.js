@@ -18,7 +18,7 @@ function findLongestWord(param) {
 
 }
 return(avengerBig);
-}
+ }
 
 console.log(findLongestWord(avengers));
 
