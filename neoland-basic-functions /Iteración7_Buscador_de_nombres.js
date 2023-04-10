@@ -23,7 +23,6 @@ const nameFinder = [
       if (array[i] === value) {
         return {exists: true, index: i};
       }
-      
     }
     return "false"
   }
