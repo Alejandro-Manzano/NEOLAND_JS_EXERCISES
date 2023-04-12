@@ -19,6 +19,7 @@ const moviesFunction = (Array) => {
 
         for(categories of element.categories){ 
         
+            console.log(element.categories);
             (!dontRepeat.includes(categories)) && dontRepeat.push(categories)   
         
         } 
