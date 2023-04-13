@@ -27,14 +27,14 @@ variables igualandolo a la función e imprimiendolo por consola. */
 
 const animalFunction = () => {
 
-    const animal = {name: 'Bengal Tiger', race: 'Tiger'}
-    const {name, race} = animal;
-    console.log(name);
-    console.log(race);
-
+    return {name: 'Bengal Tiger', race: 'Tiger'}
+    
 };
 
-animalFunction();
+const {name, race} = animalFunction();
+
+console.log(name);
+console.log(race);
 
 
 /* 2.4 En base al siguiente javascript, usa destructuring para crear las 
@@ -42,4 +42,14 @@ variables name y itv con sus respectivos valores. Posteriormente crea
 3 variables usando igualmente el destructuring para cada uno de los años 
 y comprueba que todo esta bien imprimiendolo. */
 
-const car = {name: 'Mazda 6', itv: [2015, 2011, 2020] }
+const car = {namee: 'Mazda 6', itv: [2015, 2011, 2020] }
+
+const {namee, itv} = car;
+console.log(namee); //Mazda 6
+console.log(itv); //array añños
+
+const[yearOne, yearTwo, yearThree] = itv;
+
+console.log(yearOne); //2015
+console.log(yearTwo); //2011
+console.log(yearThree); //2020
