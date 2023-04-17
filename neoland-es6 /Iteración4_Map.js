@@ -22,16 +22,16 @@ const usersTwo = [
 	{id:4, name: 'Amanda'}
 ];
 
-let personArray = [];
-const userPersonTwo = usersTwo.map( userTwo =>{  
+const userPersonTwo = usersTwo.map(( user) =>{  
 
-	if (userTwo.name[0] == "A") {
-		personArray.push("Anacleto")
-	} else (personArray.push(userTwo.name))
+	if (user.name.startsWith('A')) {
+		return { ...user, name: 'Anacleto' };
+	  }
+	  return user;
 
 })
 
-console.log(personArray);
+console.log(userPersonTwo);
 
 
 
