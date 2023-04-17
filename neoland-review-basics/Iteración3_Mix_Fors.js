@@ -50,20 +50,12 @@ for (const user of users) {
         
     }
 }
-//console.log(soundCount);
-
-let soundCountTwo = [];
-for (const element of soundCount) {
-    
-    soundCountTwo.push(element);
-
-}
-//console.log(soundCountTwo);
+console.log(soundCount);
 
 let finalCount = [];
 
 
-for (const iterator of soundCountTwo) {
+for (const iterator of soundCount) {
     
     let acc = 0;
 
@@ -87,6 +79,6 @@ for (const iterator of soundCountTwo) {
     }
 }
 
-//console.log(finalCount);
+console.log(finalCount);
 
 
