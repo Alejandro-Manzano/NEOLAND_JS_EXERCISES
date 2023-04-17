@@ -50,6 +50,7 @@ for (const user of users) {
         
     }
 }
+//console.log(soundCount);
 
 let soundCountTwo = [];
 for (const element of soundCount) {
@@ -57,7 +58,7 @@ for (const element of soundCount) {
     soundCountTwo.push(element);
 
 }
-
+//console.log(soundCountTwo);
 
 let finalCount = [];
 
@@ -66,12 +67,12 @@ for (const iterator of soundCountTwo) {
     
     let acc = 0;
 
-    for(const dontRepeat of finalCount){
+     for(const dontRepeat of finalCount){
         //console.log(dontRepeat);
         if(iterator === dontRepeat.sound){
             acc++;
         }
-    }
+    } 
 
     if(acc == 0){
 
@@ -86,6 +87,6 @@ for (const iterator of soundCountTwo) {
     }
 }
 
-console.log(finalCount);
+//console.log(finalCount);
 
 
