@@ -10,14 +10,14 @@ function averageWord(param) {
   let sumaNumber = 0;
   
 
-  for (let i=0; i<mixedElements.length; i++){
+  for (let i=0; i<param.length; i++){
 
    /*  if (typeof(mixedElements[i]) === "number"){
         sumaNumber += mixedElements[i];
     }
     else sumaNumber += mixedElements[i].length; */
 
-    (typeof(mixedElements[i]) === "number") ? sumaNumber += mixedElements[i] : sumaNumber += mixedElements[i].length;
+    (typeof(param[i]) === "number") ? sumaNumber += param[i] : sumaNumber += param[i].length;
 
   }
   return sumaNumber;
@@ -25,4 +25,4 @@ function averageWord(param) {
   
 }
 
-console.log(averageWord());
+console.log(averageWord(mixedElements));
