@@ -29,3 +29,4 @@ data-function="testMe". */
 
 const tercero = document.querySelectorAll('[data-function="testMe"]:nth-of-type(3)');
 console.log(tercero);
+
