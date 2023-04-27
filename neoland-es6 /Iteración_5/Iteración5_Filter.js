@@ -87,15 +87,46 @@ const searchYoutuber = () => {
 	searchInput.addEventListener("change", (event) => {
 
 		console.log(event.target.value);
-		let value = event.target.value;
+		let value = event.target.value; //guardo en una variable el valor que escribo en el input
 
-		const filterYoutuber = famous.filter((person) => person.name.toLowerCase().includes(value.toLowerCase()));
+		const filterYoutuber = famous.filter((person) => person.name.toLowerCase().includes(value.toLowerCase())); //compruebo filtrando a ver so .name incluye esas letras
 		console.log(filterYoutuber);
 	}) 
 }
 
 searchYoutuber();
- 
 
 
+/* 5.7 Dado el siguiente html y javascript, utiliza .filter() para mostrar por consola 
+los streamers que incluyan la palabra introducida en el input. De esta forma, si 
+introduzco 'Ru' me deberia de mostrar solo el streamer 'Rubius'. Si introduzco 'i', 
+me deberia de mostrar el streamer 'Rubius' e 'Ibai'.
+En este caso, muestra solo los streamers filtrados cuando hagamos click en el button. */
 
+const streamersFamous = [
+	{name: 'Rubius', age: 32, gameMorePlayed: 'Minecraft'},
+	{name: 'Ibai', age: 25, gameMorePlayed: 'League of Legends'},
+	{name: 'Reven', age: 43, gameMorePlayed: 'League of Legends'},
+	{name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'}
+];
+
+const inputSearch = document.querySelector('[data-function="toFilterStreamers"]');
+const button = document.querySelector('[data-function="toShowFilterStreamers"]');
+
+const printYoutuber = () => {
+	
+	const printTwo = () => {
+		inputSearch.addEventListener("change", (event) => {
+		let print = event.target.value;
+
+		const filterYoutuberTwo = streamersFamous.filter((person) => person.name.toLowerCase().includes(value.toLowerCase()));
+		console.log(filterYoutuberTwo); // creo una función como la de antes
+		})
+	}
+
+	button.addEventListener("click", (event) => { //ahora lo guardo todo dentro de este evento para que se ejecute cuando le de al botón
+		printTwo();
+	});
+
+}
+printYoutuber();
